@@ -4,30 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>SYS SUPLEMENTOS │ inicio</title>
+    <meta name="keywords" content="suplementos deportivos, suplementos, deporte, fitness, proteina, creatina, gimnasio, gym">
+    <meta name="description" content="Nos encargamos de que progreses en tus objetivos fisicos">
+    <script src="https://kit.fontawesome.com/9dec5f608b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 class="titulo">SYS SUPLEMENTOS</h1>
+    <header class="encabezado">
+        <h1 class="titulo">SYS SUPLEMENTOS</h1>
+        <h2 class="textoEncabezado">Creá tu mejor version.</h2>
+        <button class="botonEncabezado">
+            <a href="#botonEncabezado" >ver productos</a>
+        </button>
+    </header>
     <div class="navbar">
         <input id="barraDeBusqueda" type="text">
         <button id="botonPrincipal">Buscar</button>
-        <h2 class="verCarrito" id="verCarrito">🛒</h2>
+        <h2 class="verCarrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidadCarrito"></span> </h2>
     </div>
     
-    <div id="contenedorProductos">
-        
-    </div>
-    <!--modal de carrito-->
-    <div id="modalContainer" class="modalContainer">
+    <div id="botonEncabezado"></div>
+    <div id="contenedorProductos"></div>
+    <div id="modalContainer" class="modalContainer"></div>
 
-    </div>
-
+    <footer class="footer">
+             <div> <h2 class="tituloFooter">SOBRE NOSOTROS </h2> 
+                <p class="textoFooterUno"> Somos un negocio online que busca traer la mejor calidad y precio en suplementos a nuestros clientes</p> 
+                <p class="textoFooterDos">para potenciar su entrenamiento y asi lograr sus objetivos.</p>
+             </div>
+              <div> 
+                <h2 class="tituloFooter"> REDES SOCIALES</h2>
+                 <div class="redes"> 
+                    <a href="https://instagram.com/sys.suplementos?igshid=YmMyMTA2M2Y=" target="_blank" class="fa fa-instagram color-fondo" ></a> 
+                    <a href="http://wa.me/5493512008375" target="_blank" class="fa fa-whatsapp color-fondoDos" ></a>
+                 </div>
+              </div>
+              <div class="derechosAutor"> 
+                <small>&copy; 2022 <b>sys suplementos</b> - Todos los derechos Reservados. creator: BSstudios</small>
+             </div>
+    </footer>
+   
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/carrito.js"></script>
-    <script src="./js/stock.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

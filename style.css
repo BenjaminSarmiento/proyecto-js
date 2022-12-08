@@ -1,9 +1,47 @@
+body{
+  background-color: rgb(226, 222, 222);
+}
+.encabezado{
+  background-image: url(./img/imagen-portada\ \(2\).jpg);
+   height: 700px;
+   width: 1340px;
+   align-items: center;
+   justify-content: center;
+   margin-left: 0px;
+   padding-left: 0px;
+   
+}
 .titulo{
-   color: black;
+   color: rgb(255, 255, 255);
    font-size:80px;
    margin-left: 300px;
+   margin-top: 0px;
+   padding-top: 200px;
 }
-
+.textoEncabezado{
+   color: rgb(255, 123, 0);
+   font-size:50px;
+   margin-left: 450px;
+   padding-top: 0px;
+}
+.botonEncabezado{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 600px;
+} 
+.botonEncabezado a{
+  text-decoration: none;
+  color: #efefef;
+  font-size: 20px;
+}
+.botonEncabezado:hover{
+  background-color: #292929;
+  color: black;
+}
  /*barra de busqueda*/
  
  
@@ -26,12 +64,17 @@
 }
 .navbar{
     display: flex;
+    margin-top: 100px;
+    position: sticky;
+    top: 20px;
+    z-index: 99;
  }
  .barraDeBusqueda{
-    background-color: orange;
+    background-color: rgb(255, 123, 0);
     font-size: 40px;
     margin-left: 430px;
     margin-bottom: 100px;
+    border-radius: 5px;
 }
 .botonPrincipal{
     margin-left: 20px;
@@ -49,10 +92,17 @@
    grid-template-columns: repeat(1, 1fr) ;
    margin: 20px;
    width: 380px;       
-   background-color: rgb(196, 192, 192);
+   background-color: rgb(161, 159, 159);
    border-radius: 10px;
    height: 520px;
     width: 230px;
+ }
+.tarjeta:hover {
+   overflow: hidden;
+   cursor: default;
+   transition: all 400ms ease;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+   transform: translate(-3%);
  }
 .tarjetas {
       padding: 30px;
@@ -118,11 +168,12 @@
     top: 12vh;
     scrollbar-color: none;
     border-radius: 20px;
+    z-index: 100;
   }
   .modalHeader{
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     color: white;
     width: 100%;
   }
@@ -158,3 +209,60 @@
     color: black;
     border-radius: 5px;
   }
+  .sumar{
+    cursor: pointer;
+  }
+  .restar{
+    cursor: pointer;
+  }
+
+  /*footer*/
+  
+  .footer {
+    background-color: rgb(107, 107, 107);
+    margin: 0;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    height: 300px;
+  }
+  
+    .tituloFooter {
+      margin-left: 50px;
+    }
+    .footerDos {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-left: 30px;
+        background-color: rgb(107, 107, 107);
+    }
+    p {
+      color: #efefef;
+      margin-left: 10px;
+  }
+    
+    .redes a{
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: white;
+            margin-right: 10px;
+            background-color: rgb(100, 98, 98);
+            text-align: center;
+            margin-left: 50px;
+    }
+    .derechosAutor {
+        text-align: center;
+        color: white;
+        margin-top: 300px;
+    }
+.footer h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
